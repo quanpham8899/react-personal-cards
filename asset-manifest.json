@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-personal-cards/static/css/main.dad33793.css",
+    "main.js": "/react-personal-cards/static/js/main.281ed51c.js",
+    "index.html": "/react-personal-cards/index.html",
+    "main.dad33793.css.map": "/react-personal-cards/static/css/main.dad33793.css.map",
+    "main.281ed51c.js.map": "/react-personal-cards/static/js/main.281ed51c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dad33793.css",
+    "static/js/main.281ed51c.js"
+  ]
+}
