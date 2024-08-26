@@ -1,8 +1,6 @@
-import { useEffect, useState, useContext } from 'react';
+import {  useState } from 'react';
 import './App.css';
 import Card from './Card/Card';
-import { userNameContext } from './Card/Card.jsx';
-
 
 function App() {
   const [cardList, setCardList] = useState(
@@ -13,7 +11,7 @@ function App() {
     ]);
 
   function onRemoveCard(id) {
-    setCardList(c => c.filter((card, index) => card.key != id));
+    setCardList(c => c.filter((card, index) => card.key !== id));
   }
 
   function onAddCard() {

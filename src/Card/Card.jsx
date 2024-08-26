@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState, createContext} from 'react';
 import styles from './Card.module.css';
-import App from '../App.js';
 
 export const userNameContext = createContext();
 
@@ -33,7 +32,6 @@ function Card({onDelete,id}) {
 
     const onEditBackgroundColor = "antiquewhite";       // Base on the CSS
     let defaultInputBackgroundColor = "";
-    let warning = "Can't be empty";
     let imageStyles_Active = {
         border: "2px solid black",
         cursor: "pointer",
@@ -49,12 +47,9 @@ function Card({onDelete,id}) {
             defaultInputBackgroundColor = window.getComputedStyle(inputEmail.current).getPropertyValue('background-color');
         }
 
-        if (defaultInputBackgroundColor == '') {
+        if (defaultInputBackgroundColor === '') {
             console.warn("Failed to get defaultBackgroundColor this may failed to do something I don't fucking know or just to lazy to type why hihi")
         }
-        return () => {
-
-        };
     }, []);
 
     useEffect(() => {
@@ -133,8 +128,6 @@ function Card({onDelete,id}) {
 
             setValidEmail(_validEmail);
             setValidPhone(_validPhone);
-
-            const _valid = _validName && _validEmail && _validPhone;
 
             if (!_validName) {
                 setName("[Empty name]");
