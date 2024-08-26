@@ -1,0 +1,138 @@
+.card {
+    background-color: rgb(237, 216, 188);
+    border: 5px solid rgba(128, 128, 128, 0.35);
+    width: 250px;
+    padding: 18px 25px;
+    border-radius: 18px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.253);
+}
+
+
+.card-avatar {
+    display: block;
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    margin: 0 auto;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.card h3 {
+    margin: 10px 0;
+    text-align: center;
+    font-size: 1.55em;
+}
+
+.card .card-name {
+    border:none;
+    width: 98%;
+    background-color: rgba(0,0,0,0);
+    text-align: center;
+    font-size: 1.65em;
+    font-weight: bold;
+    padding: 5px 0;
+    margin: 2px 0;
+}
+.card .card-name:focus {
+    outline: none;
+    border: none;
+}
+
+.card .card-name:disabled {
+    color: inherit;
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card-info :first-child, .card-info :nth-child(2) {
+    flex: 1;
+}
+
+.card-info :nth-child(2), .card-info.address .address-context {
+    user-select: none;
+    margin: 5px 0;
+    padding: 7px 5px;
+    border: 1px solid green;
+    border-radius: 10px;
+}
+
+.card-info.address {
+    width: 95%;
+    display: block;
+}
+
+.card-info.address .address-context {
+    width: 100%;
+    user-select: none;
+    height: 50px;
+    overflow-y: auto;   
+    resize: none;
+}
+
+.card-info span {
+    font-weight: bold;
+}
+
+.card-action {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.card-action button {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    border-radius: 17px;
+    font-size: .9em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    transition: background-color .35s ease, color .2s ease;
+    cursor: pointer;
+}
+
+.card-action button:nth-child(-n+2) {
+    background-color: rgb(146, 125, 19);
+}
+
+.card-action button:hover:nth-child(-n+2) {
+    background-color: rgb(200, 189, 129);
+    color:black;
+}
+
+.card-action button:active:nth-child(-n+2) {
+    background-color: rgb(123, 117, 82);
+    color:white;
+}
+
+.card input, textarea {
+    background-color: rgba(226, 173, 104, 0.693);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .92em;
+    font-weight: normal;
+}
+
+.button-accept {
+    background-color: rgb(83, 241, 83);
+}
+
+.button-cancel {
+    background-color: rgb(206, 206, 48);
+}
+
+
+.button-accept:hover {
+    background-color: rgb(57, 153, 57);
+}
+
+.button-cancel:hover {
+    background-color: rgb(134, 134, 40);
+}
+
+.card-info input:focus, textarea:focus {
+    outline: 2px solid green;
+}
