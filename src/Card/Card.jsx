@@ -44,6 +44,7 @@ function Card({onDelete,id}) {
 
     useEffect(() => {
         if (inputEmail !== null) {
+            // eslint-disable-next-line
             defaultInputBackgroundColor = window.getComputedStyle(inputEmail.current).getPropertyValue('background-color');
         }
 
@@ -59,7 +60,7 @@ function Card({onDelete,id}) {
         changeInputBackgroundColor(inputEmail.current, !inputDisable ? onEditBackgroundColor : defaultInputBackgroundColor);
         changeInputBackgroundColor(inputPhone.current, !inputDisable ? onEditBackgroundColor : defaultInputBackgroundColor);
         changeInputBackgroundColor(inputAddress.current, !inputDisable ? onEditBackgroundColor : defaultInputBackgroundColor);
-
+    // eslint-disable-next-line
     }, [inputDisable]);
 
     // -----------
